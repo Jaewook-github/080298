@@ -13,10 +13,11 @@ class Kiwoom(QAxWidget):
         self._set_signal_slots()
         self._comm_connect()
 
+        # 계좌 정보, 종목 정보 등 초기화
         self.account_number = self.get_account_number()
-
         self.tr_event_loop = QEventLoop()
 
+        # 주문, 잔고, 실시간 정보 저장용 딕셔너리
         self.order = {}
         self.balance = {}
         self.universe_realtime_transaction_info = {}

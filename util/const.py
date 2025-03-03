@@ -1,4 +1,5 @@
 # 실시간 정보를 얻어오는데 사용하는 FID CODE 목록을 딕셔너리 형태로 저장
+
 FID_CODES = {
     "10": "현재가",
     "11": "전일 대비",
@@ -289,3 +290,5 @@ def get_fid(search_value):
 
 # 발급 받은 LINE 토큰을 붙여 넣습니다.
 RSI_STRATEGY_MESSAGE_TOKEN = "TOKEN"
+BOLMA_STRATEGY_MESSAGE_TOKEN = "TOKEN"
+TripleScreen_STRATEGY_MESSAGE_TOKEN = "TOKEN"
